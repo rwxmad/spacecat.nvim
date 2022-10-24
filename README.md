@@ -29,3 +29,4 @@ Plug 'rwxmad/spacecat.nvim'
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [dashboard-nvim](https://github.com/glepnir/dashboard-nvim)
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
