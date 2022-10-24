@@ -21,6 +21,21 @@ use 'rwxmad/spacecat.nvim'
 Plug 'rwxmad/spacecat.nvim'
 ```
 
+## Configuration
+
+```lua
+-- Default options:
+require('spacecat').setup({
+  undercurl = true,
+  underline = true,
+  bold = true,
+  italic = true,
+  inverse = true,
+  overrides = {},
+})
+vim.cmd('colorscheme spacecat')
+```
+
 ### Plugin Support
 
 - [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
