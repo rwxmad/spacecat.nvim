@@ -1,0 +1,28 @@
+# spacecat Alacritty colors
+colors:
+  # Default colors
+  primary:
+    background: "#171717"
+    foreground: "#cbcbcb"
+
+  # Normal colors
+  normal:
+    black: "#121212"
+    red: "#f40041"
+    green: "#25b455"
+    yellow: "#e1bc83"
+    blue: "#2c9ad9"
+    magenta: "#e487d5"
+    cyan: "#6fc8c2"
+    white: "#cbcbcb"
+
+  # Bright colors
+  bright:
+    black: "#414141"
+    red: "#f63367"
+    green: "#51c377"
+    yellow: "#e7c99c"
+    blue: "#56aee1"
+    magenta: "#e99fdd"
+    cyan: "#8cd3ce"
+    white: "#d5d5d5"
