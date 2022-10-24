@@ -253,6 +253,14 @@ theme.setup = function()
     NvimTreeGitNew = { fg = c.git.add },
     NvimTreeGitDeleted = { fg = c.git.delete },
     NvimTreeNormal = { fg = c.white, bg = c.bg_dark },
+
+    -- -------------------------------------------------------------------------------------------------
+    -- Dashboard
+    -- -------------------------------------------------------------------------------------------------
+    DashboardShortCut = { fg = c.cyan },
+    DashboardHeader = { fg = c.orange },
+    DashboardCenter = { fg = c.green },
+    DashboardFooter = { fg = c.yellow, italic = config.italic },
   }
 
   -- Overrides from setup ( if exists )
