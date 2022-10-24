@@ -229,9 +229,14 @@ theme.setup = function()
     -- Telescope
     -- -------------------------------------------------------------------------------------------------
     TelescopeNormal = { fg = c.fg, bg = c.bg_dark },
-    TelescopeBorder = { fg = c.orange, bg = c.bg_dark },
     TelescopeSelection = { fg = c.orange, bold = config.bold },
+    TelescopeBorder = { fg = c.orange, bg = c.bg_dark },
     TelescopePromptCounter = { fg = c.green, bg = c.bg },
+    TelescopeSelectionCaret = { fg = c.red },
+    TelescopePromptBorder = { fg = c.orange },
+    TelescopeResultsBorder = { fg = c.orange },
+    TelescopePreviewBorder = { fg = c.orange },
+    TelescopePromptPrefix = { fg = c.red },
 
     -- -------------------------------------------------------------------------------------------------
     -- GitSigns
