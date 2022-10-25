@@ -48,3 +48,7 @@ vim.cmd('colorscheme spacecat')
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim)
 - [nvim-navic](https://github.com/SmiteshP/nvim-navic)
+
+## Extras
+
+Extra color config for **Alacritty** can be found in [extras](extras/)
