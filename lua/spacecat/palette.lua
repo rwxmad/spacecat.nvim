@@ -23,7 +23,7 @@ palette = {
 
 palette.comment = palette.grey
 
-palette.hint = palette.green
+palette.hint = palette.teal
 palette.info = palette.cyan
 palette.warning = palette.yellow
 palette.error = palette.red

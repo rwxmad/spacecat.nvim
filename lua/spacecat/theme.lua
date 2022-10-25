@@ -266,6 +266,33 @@ theme.setup = function()
     DashboardHeader = { fg = c.orange },
     DashboardCenter = { fg = c.green },
     DashboardFooter = { fg = c.yellow, italic = config.italic },
+    DiagnosticWarning = { link = 'DiagnosticWarn' },
+    DiagnosticInformation = { link = 'DiagnosticInfo' },
+
+    -- -------------------------------------------------------------------------------------------------
+    -- Lspsaga
+    -- -------------------------------------------------------------------------------------------------
+    LspFloatWinNormal = { bg = c.bg_dark },
+    LspFloatWinBorder = { fg = c.orange },
+    LspSagaBorderTitle = { fg = c.green },
+    LspSagaHoverBorder = { fg = c.orange },
+    LspSagaRenameBorder = { fg = c.orange },
+    LspSagaDefPreviewBorder = { fg = c.orange },
+    LspSagaCodeActionBorder = { fg = c.orange },
+    LspSagaLspFinderBorder = { fg = c.orange },
+    LspSagaDiagnosticBorder = { fg = c.orange },
+    LspSagaSignatureHelpBorder = { fg = c.orange },
+    DefinitionBorder = { fg = c.orange },
+    FinderSpinnerBorder = { fg = c.orange },
+    LSOutlinePreviewBorder = { fg = c.orange },
+    LspSagaFinderSelection = { fg = c.green },
+    LspSagaCodeActionTitle = { fg = c.blue },
+    LspSagaCodeActionContent = { fg = c.purple },
+    ReferencesCount = { fg = c.purple },
+    DefinitionCount = { fg = c.purple },
+    DefinitionIcon = { fg = c.blue },
+    ReferencesIcon = { fg = c.blue },
+    TargetWord = { fg = c.cyan },
   }
 
   -- Overrides from setup ( if exists )
