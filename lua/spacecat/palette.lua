@@ -16,7 +16,7 @@ palette = {
   cyan = '#6fc8c2',
   red = '#f40041',
   orange = '#f17f33',
-  yellow = '#e1bc83',
+  yellow = '#e1b36c',
   purple = '#a68bf5',
   magenta = '#e487d5',
 }
