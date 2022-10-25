@@ -300,9 +300,9 @@ theme.setup = function()
     CmpDocumentation = { fg = c.fg, bg = c.bg_dark },
     CmpDocumentationBorder = { fg = c.orange, bg = c.bg_dark },
     CmpItemAbbr = { fg = c.fg, bg = c.none },
-    CmpItemAbbrDeprecated = { fg = c.bg_light, bg = c.none },
+    CmpItemAbbrDeprecated = { fg = c.bg_light, bg = c.none, strikethrough = true },
     CmpItemAbbrMatch = { fg = c.green, bg = c.none },
-    CmpItemAbbrMatchFuzzy = { fg = c.blue, bg = c.none },
+    CmpItemAbbrMatchFuzzy = { fg = c.green, bg = c.none },
     CmpItemMenu = { fg = c.green, bg = c.none },
     CmpItemKindDefault = { fg = c.bg_light, bg = c.none },
     CmpItemKindKeyword = { fg = c.cyan, bg = c.none },
@@ -325,7 +325,7 @@ theme.setup = function()
     CmpItemKindTypeParameter = { fg = c.green, bg = c.none },
     CmpItemKindEnumMember = { fg = c.green, bg = c.none },
     CmpItemKindOperator = { fg = c.green, bg = c.none },
-    CmpItemKindSnippet = { fg = c.bg_dark, bg = c.none },
+    CmpItemKindSnippet = { fg = c.grey, bg = c.none },
   }
 
   -- Overrides from setup ( if exists )
