@@ -5,7 +5,7 @@
 
 ## Requirements
 
-[neovim >=0.7.0](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+[neovim >=0.8.0](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 
 ## Installation
 
