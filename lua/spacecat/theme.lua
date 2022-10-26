@@ -192,7 +192,7 @@ theme.setup = function()
     -- TSParameterReference { } , -- References to parameters of a function.
     -- TSPreProc            { } , -- Preprocessor #if, #else, #endif, etc.
     ['@property'] = { fg = c.green }, -- Same as `TSField`.
-    ['@punctuation.delimiter'] = { fg = c.red }, -- Punctuation delimiters: Periods, commas, semicolons, etc.
+    ['@punctuation.delimiter'] = { fg = c.orange }, -- Punctuation delimiters: Periods, commas, semicolons, etc.
     ['@punctuation.bracket'] = { fg = c.yellow }, -- Brackets, braces, parentheses, etc.
     ['@punctuation.special'] = { fg = c.yelow }, -- Special punctuation that doesn't fit into the previous categories.
     ['@repeat'] = { fg = c.orange }, -- Keywords related to loops: `for`, `while`, etc.
