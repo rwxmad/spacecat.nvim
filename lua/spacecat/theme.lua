@@ -158,7 +158,7 @@ theme.setup = function()
     -- -------------------------------------------------------------------------------------------------
     -- Tree-Sitter syntax groups
     -- -------------------------------------------------------------------------------------------------
-    TSAttribute = { fg = c.comment }, -- Annotations that can be attached to the code to denote some kind of meta information. e.g. C++/Dart attributes.
+    ['@attribute'] = { fg = c.comment }, -- Annotations that can be attached to the code to denote some kind of meta information. e.g. C++/Dart attributes.
     -- TSBoolean            { } , -- Boolean literals: `True` and `False` in Python.
     -- TSCharacter          { } , -- Character literals: `'a'` in C.
     -- TSCharacterSpecial   { } , -- Special characters.
@@ -167,45 +167,45 @@ theme.setup = function()
     -- TSConstant           { } , -- Constants identifiers. These might not be semantically constant. E.g. uppercase variables in Python.
     -- TSConstBuiltin       { } , -- Built-in constant values: `nil` in Lua.
     -- TSConstMacro         { } , -- Constants defined by macros: `NULL` in C.
-    TSConstructor = { fg = c.orange }, -- Constructor calls and definitions: `{}` in Lua, and Java constructors.
+    ['@constructor'] = { fg = c.orange }, -- Constructor calls and definitions: `{}` in Lua, and Java constructors.
     -- TSDebug              { } , -- Debugging statements.
     -- TSDefine             { } , -- Preprocessor #define statements.
     -- TSError              { } , -- Syntax/parser errors. This might highlight large sections of code while the user is typing still incomplete code, use a sensible highlight.
     -- TSException          { } , -- Exception related keywords: `try`, `except`, `finally` in Python.
-    TSField = { fg = c.green }, -- Object and struct fields.
+    ['@field'] = { fg = c.green }, -- Object and struct fields.
     -- TSFloat              { } , -- Floating-point number literals.
     -- TSFunction           { } , -- Function calls and definitions.
     -- TSFuncBuiltin        { } , -- Built-in functions: `print` in Lua.
-    TSFuncMacro = { fg = c.red }, -- Macro defined functions (calls and definitions): each `macro_rules` in Rust.
-    TSInclude = { fg = c.orange }, -- File or module inclusion keywords: `#include` in C, `use` or `extern crate` in Rust.
+    ['@function.macro'] = { fg = c.purple }, -- Macro defined functions (calls and definitions): each `macro_rules` in Rust.
+    ['@include'] = { fg = c.orange }, -- File or module inclusion keywords: `#include` in C, `use` or `extern crate` in Rust.
     -- TSKeyword            { } , -- Keywords that don't fit into other categories.
-    TSKeywordFunction = { fg = c.orange }, -- Keywords used to define a function: `function` in Lua, `def` and `lambda` in Python.
+    ['@keyword.function'] = { fg = c.orange }, -- Keywords used to define a function: `function` in Lua, `def` and `lambda` in Python.
     -- TSKeywordOperator    { } , -- Unary and binary operators that are English words: `and`, `or` in Python; `sizeof` in C.
-    TSKeywordReturn = { fg = c.orange }, -- Keywords like `return` and `yield`.
-    TSLabel = { fg = c.blue }, -- GOTO labels: `label:` in C, and `::label::` in Lua.
+    ['@keyword.return'] = { fg = c.red }, -- Keywords like `return` and `yield`.
+    ['@label'] = { fg = c.blue }, -- GOTO labels: `label:` in C, and `::label::` in Lua.
     -- TSMethod             { } , -- Method calls and definitions.
-    TSNamespace = { fg = c.fg }, -- Identifiers referring to modules and namespaces.
+    ['@namespace'] = { fg = c.fg }, -- Identifiers referring to modules and namespaces.
     -- TSNone               { } , -- No highlighting (sets all highlight arguments to `NONE`). this group is used to clear certain ranges, for example, string interpolations. Don't change the values of this highlight group.
     -- TSNumber             { } , -- Numeric literals that don't fit into other categories.
-    TSOperator = { fg = c.blue }, -- Binary or unary operators: `+`, and also `->` and `*` in C.
-    TSParameter = { fg = c.green }, -- Parameters of a function.
+    ['@operator'] = { fg = c.blue }, -- Binary or unary operators: `+`, and also `->` and `*` in C.
+    ['@parameter'] = { fg = c.green }, -- Parameters of a function.
     -- TSParameterReference { } , -- References to parameters of a function.
     -- TSPreProc            { } , -- Preprocessor #if, #else, #endif, etc.
-    TSProperty = { fg = c.reen }, -- Same as `TSField`.
-    TSPunctDelimiter = { fg = c.fg }, -- Punctuation delimiters: Periods, commas, semicolons, etc.
-    TSPunctBracket = { fg = c.yellow }, -- Brackets, braces, parentheses, etc.
-    TSPunctSpecial = { fg = c.yellow }, -- Special punctuation that doesn't fit into the previous categories.
-    TSRepeat = { fg = c.orange }, -- Keywords related to loops: `for`, `while`, etc.
+    ['@property'] = { fg = c.green }, -- Same as `TSField`.
+    ['@punctuation.delimiter'] = { fg = c.red }, -- Punctuation delimiters: Periods, commas, semicolons, etc.
+    ['@punctuation.bracket'] = { fg = c.yellow }, -- Brackets, braces, parentheses, etc.
+    ['@punctuation.special'] = { fg = c.yelow }, -- Special punctuation that doesn't fit into the previous categories.
+    ['@repeat'] = { fg = c.orange }, -- Keywords related to loops: `for`, `while`, etc.
     -- TSStorageClass       { } , -- Keywords that affect how a variable is stored: `static`, `comptime`, `extern`, etc.
     -- TSString             { } , -- String literals.
     -- TSStringRegex        { } , -- Regular expression literals.
-    TSStringEscape = { fg = c.magenta }, -- Escape characters within a string: `\n`, `\t`, etc.
+    ['@string.escape'] = { fg = c.magenta }, -- Escape characters within a string: `\n`, `\t`, etc.
     -- TSStringSpecial      { } , -- Strings with special meaning that don't fit into the previous categories.
     -- TSSymbol             { } , -- Identifiers referring to symbols or atoms.
-    TSTag = { fg = c.red }, -- Tags like HTML tag names.
-    TSTagAttribute = { fg = c.teal }, -- HTML tag attributes.
-    TSTagDelimiter = { fg = c.red }, -- Tag delimiters like `<` `>` `/`.
-    TSText = { fg = c.white }, -- Non-structured text. Like text in a markup language.
+    ['@tag'] = { fg = c.green }, -- Tags like HTML tag names.
+    ['@tag.attribute'] = { fg = c.orange }, -- HTML tag attributes.
+    ['@tag.delimiter'] = { fg = c.red }, -- Tag delimiters like `<` `>` `/`.
+    ['@text'] = { fg = c.fg }, -- Non-structured text. Like text in a markup language.
     -- TSStrong             { } , -- Text to be represented in bold.
     -- TSEmphasis           { } , -- Text to be represented with emphasis.
     -- TSUnderline          { } , -- Text to be represented with an underline.
@@ -214,16 +214,16 @@ theme.setup = function()
     -- TSLiteral            { } , -- Literal or verbatim text.
     -- TSURI                { } , -- URIs like hyperlinks or email addresses.
     -- TSMath               { } , -- Math environments like LaTeX's `$ ... $`
-    TSTextReference = { fg = c.fg }, -- Footnotes, text references, citations, etc.
+    ['@text.reference'] = { fg = c.fg }, -- Footnotes, text references, citations, etc.
     -- TSEnvironment        { } , -- Text environments of markup languages.
     -- TSEnvironmentName    { } , -- Text/string indicating the type of text environment. Like the name of a `\begin` block in LaTeX.
-    TSNote = { fg = c.bg, bg = c.info }, -- Text representation of an informational note.
-    TSWarning = { fg = c.bg, bg = c.warning }, -- Text representation of a warning note.
-    TSDanger = { fg = c.bg, bg = c.error }, -- Text representation of a danger note.
-    TSType = { fg = c.fg }, -- Type (and class) definitions and annotations.
-    TSTypeBuiltin = { fg = c.fg }, -- Built-in types: `i32` in Rust.
-    TSVariable = { fg = c.green }, -- Variable names that don't fit into other categories.
-    TSVariableBuiltin = { fg = c.red }, -- Variable names defined by the language: `this` or `self` in Javascript.
+    ['@note'] = { fg = c.bg, bg = c.info }, -- Text representation of an informational note.
+    ['@warning'] = { fg = c.bg, bg = c.warning }, -- Text representation of a warning note.
+    ['@danger'] = { fg = c.bg, bg = c.error }, -- Text representation of a danger note.
+    ['@type'] = { fg = c.fg }, -- Type (and class) definitions and annotations.
+    ['@type.builtin'] = { fg = c.fg }, -- Built-in types: `i32` in Rust.
+    ['@variable'] = { fg = c.green }, -- Variable names that don't fit into other categories.
+    ['@variable.builtin'] = { fg = c.red }, -- Variable names defined by the language: `this` or `self` in Javascript.
 
     -- -------------------------------------------------------------------------------------------------
     -- Telescope
