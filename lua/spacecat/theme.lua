@@ -38,7 +38,7 @@ theme.setup = function()
     MsgArea = { fg = c.fg }, -- Area for messages and cmdline
     -- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
     MoreMsg = { fg = c.blue }, -- |more-prompt|
-    -- NonText      { }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
+    NonText = { fg = c.bg_dark }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal = { fg = c.fg, bg = c.bg }, -- Normal text
     NormalFloat = { fg = c.fg, bg = c.bg }, -- Normal text in floating windows.
     NormalNC = { fg = c.fg, bg = c.bg }, -- normal text in non-current windows
@@ -48,7 +48,7 @@ theme.setup = function()
     PmenuSbar = { bg = c.bg_dark }, -- Popup menu: Scrollbar.
     PmenuThumb = { bg = c.bg_light }, -- Popup menu: Thumb of the scrollbar.
     Question = { fg = c.blue }, -- |hit-enter| prompt and yes/no questions
-    QuickFixLine = { bg = c.bg_visual, bold = config.bold }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
+    QuickFixLine = { bg = c.bg_light, bold = config.bold }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
     Search = { bg = c.blue, fg = c.bg }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
     SpecialKey = { fg = c.bg_dark }, -- Unprintable characters: text displayed differently from what it really is. But not 'listchars' whitespace. |hl-Whitespace|
     SpellBad = { sp = c.error, undercurl = config.undercurl }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
