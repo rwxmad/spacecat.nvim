@@ -17,7 +17,7 @@ theme.setup = function()
     CursorColumn = { bg = c.bg_light }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorLine = { fg = c.bg_light }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory = { fg = c.blue }, -- Directory names (and other special names in listings)
-    DiffAdd = { fg = c.green_light, bg = c.bg }, -- Diff mode: Added line |diff.txt|
+    DiffAdd = { fg = c.green, bg = c.bg }, -- Diff mode: Added line |diff.txt|
     DiffChange = { fg = c.cyan, bg = c.bg }, -- Diff mode: Changed line |diff.txt|
     DiffDelete = { fg = c.red, bg = c.bg }, -- Diff mode: Deleted line |diff.txt|
     DiffText = { fg = c.yellow, bg = c.bg }, -- Diff mode: Changed text within a changed line |diff.txt|
@@ -38,7 +38,7 @@ theme.setup = function()
     MsgArea = { fg = c.fg }, -- Area for messages and cmdline
     -- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
     MoreMsg = { fg = c.blue }, -- |more-prompt|
-    NonText = { fg = c.bg_dark }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
+    NonText = { fg = c.comment }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal = { fg = c.fg, bg = c.bg }, -- Normal text
     NormalFloat = { fg = c.fg, bg = c.bg }, -- Normal text in floating windows.
     NormalNC = { fg = c.fg, bg = c.bg }, -- normal text in non-current windows
