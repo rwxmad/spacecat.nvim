@@ -3,6 +3,8 @@
 <p>A dark Neovim theme written in Lua</p>
 </div>
 
+<img width="1920" src="https://user-images.githubusercontent.com/30772868/198873481-96fba838-2e7d-4ef0-befd-80a58dcd1272.png">
+
 ## Requirements
 
 [neovim >=0.8.0](https://github.com/neovim/neovim/wiki/Installing-Neovim)
