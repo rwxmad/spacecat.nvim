@@ -78,7 +78,7 @@ theme.setup = function()
     -- Float          { }, --   A floating point constant: 2.3e10
 
     Identifier = { fg = c.green }, -- (*) Any variable name
-    Function = { fg = c.red }, --   Function name (also: methods for classes)
+    Function = { fg = c.orange }, --   Function name (also: methods for classes)
 
     Statement = { fg = c.orange }, -- (*) Any statement
     -- Conditional    { }, --   if, then, else, endif, switch, etc.
