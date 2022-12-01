@@ -50,6 +50,7 @@ vim.cmd('colorscheme spacecat')
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim)
 - [nvim-navic](https://github.com/SmiteshP/nvim-navic)
+- [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
 
 ## Extras
 

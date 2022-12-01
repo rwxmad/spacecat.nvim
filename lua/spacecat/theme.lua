@@ -359,6 +359,17 @@ theme.setup = function()
     NavicIconsTypeParameter = { fg = c.green, bg = c.none },
     NavicText = { fg = c.fg, bg = c.none },
     NavicSeparator = { fg = c.fg, bg = c.none },
+
+    -- -------------------------------------------------------------------------------------------------
+    -- ts-rainbow
+    -- -------------------------------------------------------------------------------------------------
+    rainbowcol1 = { fg = c.orange },
+    rainbowcol2 = { fg = c.yellow },
+    rainbowcol3 = { fg = c.red },
+    rainbowcol4 = { fg = c.teal },
+    rainbowcol5 = { fg = c.blue },
+    rainbowcol6 = { fg = c.magenta },
+    rainbowcol7 = { fg = c.purple },
   }
 
   -- Overrides from setup ( if exists )
