@@ -95,7 +95,7 @@ theme.setup = function()
     -- PreCondit      { }, --   Preprocessor #if, #else, #endif, etc.
 
     Type = { fg = c.red }, -- (*) int, long, char, etc.
-    -- StorageClass   { }, --   static, register, volatile, etc.
+    StorageClass = { fg = c.yellow }, --   static, register, volatile, etc.
     -- Structure      { }, --   struct, union, enum, etc.
     -- Typedef        { }, --   A typedef
 
@@ -194,7 +194,7 @@ theme.setup = function()
     ['@property'] = { fg = c.green }, -- Same as `TSField`.
     ['@punctuation.delimiter'] = { fg = c.orange }, -- Punctuation delimiters: Periods, commas, semicolons, etc.
     ['@punctuation.bracket'] = { fg = c.yellow }, -- Brackets, braces, parentheses, etc.
-    ['@punctuation.special'] = { fg = c.yelow }, -- Special punctuation that doesn't fit into the previous categories.
+    ['@punctuation.special'] = { fg = c.yellow }, -- Special punctuation that doesn't fit into the previous categories.
     ['@repeat'] = { fg = c.orange }, -- Keywords related to loops: `for`, `while`, etc.
     -- TSStorageClass       { } , -- Keywords that affect how a variable is stored: `static`, `comptime`, `extern`, etc.
     -- TSString             { } , -- String literals.
