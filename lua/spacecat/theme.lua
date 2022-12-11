@@ -221,7 +221,7 @@ theme.setup = function()
     ['@warning'] = { fg = c.bg, bg = c.warning }, -- Text representation of a warning note.
     ['@danger'] = { fg = c.bg, bg = c.error }, -- Text representation of a danger note.
     ['@type'] = { fg = c.fg }, -- Type (and class) definitions and annotations.
-    ['@type.builtin'] = { fg = c.fg }, -- Built-in types: `i32` in Rust.
+    ['@type.builtin'] = { fg = c.yellow }, -- Built-in types: `i32` in Rust.
     ['@type.qualifier'] = { fg = c.yellow },
     ['@type.definition'] = { fg = c.yellow },
     ['@variable'] = { fg = c.green }, -- Variable names that don't fit into other categories.
