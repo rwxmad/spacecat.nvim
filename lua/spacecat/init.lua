@@ -7,6 +7,7 @@ M.config = {
   bold = true,
   italic = true,
   inverse = true,
+  transparent = false,
   overrides = {},
 }
 

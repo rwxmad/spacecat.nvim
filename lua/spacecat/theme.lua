@@ -39,7 +39,7 @@ theme.setup = function()
     -- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
     MoreMsg = { fg = c.blue }, -- |more-prompt|
     NonText = { fg = c.comment }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
-    Normal = { fg = c.fg, bg = c.bg }, -- Normal text
+    Normal = { fg = c.fg, bg = config.transparent and c.none or c.bg }, -- Normal text
     NormalFloat = { fg = c.fg, bg = c.bg }, -- Normal text in floating windows.
     NormalNC = { fg = c.fg, bg = c.bg }, -- normal text in non-current windows
     NormalSB = { fg = c.fg, bg = c.bg_dark }, -- normal text in non-current windows
